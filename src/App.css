@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.header a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header h3 {
+  margin-left: 5vw;
+  font-size: 22px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+  margin-right: 5vw;
+  margin-top: 27px;
+  font-size: 18px;
+}
+
+.nav li {
+  margin-top: 3px;
+}
+
+#darkmode {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.about, .work, .contact {
+  width: 70vw;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.work {
+  margin-top: 100px;
+}
+
+.work h2{
+  margin-bottom: 80px;
+}
+
+.about-me {
+  width: 50vw;
+  font-size: 20px;
+}
+
+.location {
+  font-weight: 700;
+}
+
+.work-list {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.work-list li{
+  margin-bottom: 50px;
+  height: 50px;
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+}
+
+.tech-stack {
+  display: flex;
+  position: relative;
+  bottom: 10px;
+}
+
+.work-title {
+  width: 40vw;
+  position: relative;
+  bottom: 5px;
+}
+
+.redux {
+  position: relative;
+  top: 5px;
+}
+
+.about span {
+  color: green;
+}
+
+.about span:first-child {
+  color: rgb(247, 209, 37);
+}
+
+.about span:nth-child(2) {
+  color: blue;
+}
+
+.lets-talk {
+  margin-bottom: -10px;
+}
+
+.contact p {
+  font-weight: 500;
+}
+
+.contact a {
+  text-decoration: none;
+  color: blue;
 }
