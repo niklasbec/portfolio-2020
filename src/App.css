@@ -9,9 +9,14 @@
   color: inherit;
 }
 
-.header h3 {
+.header img:first-child {
   margin-left: 5vw;
+}
+
+.header h3 {
   font-size: 22px;
+  margin-left: 5px;
+  margin-top: 25px;
 }
 
 .nav {
@@ -87,6 +92,11 @@
   top: 5px;
 }
 
+.about {
+  margin-top: 120px;
+  margin-bottom: 150px;
+}
+
 .about span {
   color: green;
 }
@@ -110,4 +120,8 @@
 .contact a {
   text-decoration: none;
   color: blue;
+}
+
+.logo-div {
+  display: flex;
 }

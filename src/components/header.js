@@ -18,7 +18,10 @@ function Header(props) {
 
     return (
       <div className="header">
-        <h3 classname='logo'>Niklas Becker</h3>
+      <div className='logo-div'>
+      <img src="https://image.flaticon.com/icons/svg/323/323332.svg" width="25px" />
+      <h3 classname='logo'>Niklas Becker</h3>
+      </div>
         <div className="nav">
             <a href='#work'><li>Work</li></a>
             <a href='#about'><li>About</li></a>
