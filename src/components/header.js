@@ -19,14 +19,14 @@ function Header(props) {
     return (
       <div className="header">
       <div className='logo-div'>
-      <img src="https://image.flaticon.com/icons/svg/323/323332.svg" width="25px" />
+      <img src="https://image.flaticon.com/icons/svg/323/323332.svg" alt="german flag" width="25px" />
       <h3 classname='logo'>Niklas Becker</h3>
       </div>
         <div className="nav">
             <a href='#work'><li>Work</li></a>
             <a href='#about'><li>About</li></a>
             <a href='#contact'><li>Contact</li></a>
-            <img onClick={darkmodeToggle} id='darkmode' src='https://image.flaticon.com/icons/svg/414/414840.svg' width="30px"/>
+            <img onClick={darkmodeToggle} id='darkmode' src='https://image.flaticon.com/icons/svg/414/414840.svg' alt="darkmode toggle in form of a moon/sun" width="30px"/>
         </div>
       </div>
     );
