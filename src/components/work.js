@@ -54,7 +54,7 @@ function Work() {
           </a>
         </li>
         <li>
-          <p className="work-title">Labs Project</p>
+          <p className="work-title">Labs</p>
           <div className="tech-stack">
             <img
               src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"
