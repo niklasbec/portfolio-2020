@@ -99,6 +99,7 @@
 
 .about span {
   color: green;
+  font-weight: 600;
 }
 
 .about span:first-child {
@@ -116,8 +117,8 @@
   margin-left: 10px;
 }
 
-.socials img:nth-child(2) {
-  margin-top: 5px;
+.socials a:nth-child(2) {
+  margin-top: 3px;
   margin-left: 10px;
 }
 
