@@ -109,6 +109,18 @@
   color: blue;
 }
 
+.socials {
+  width: 4vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.socials img:nth-child(2) {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
 .lets-talk {
   margin-bottom: -10px;
 }
@@ -142,6 +154,17 @@
     text-align: center;
   }
 
+  .about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .socials {
+    margin-right: 50px;
+    margin-top: 40px;
+  }
+
   .about-me {
     margin: 40px auto;
   }
@@ -171,6 +194,11 @@
     display: none;
   }
 
+  .about {
+    display: flex;
+    justify-content: center;
+  }
+
   .header {
     flex-direction: column;
     align-items: center;
@@ -181,6 +209,11 @@
   .nav {
     width: 80vw;
     margin-left: 10vw;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
   }
 
   .nav {
