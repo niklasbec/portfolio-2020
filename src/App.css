@@ -226,3 +226,88 @@
     align-items: center;
   }
 }
+
+/* Showcase */
+
+
+.showcase {
+  width: 60vw;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  -webkit-box-shadow: 6px 9px 40px -2px rgba(112,112,112,1);
+  -moz-box-shadow: 6px 9px 40px -2px rgba(112,112,112,1);
+  box-shadow: 6px 9px 40px -2px rgba(112,112,112,1);
+}
+
+.left {
+  height: 100%;
+  width: 65%;
+  border-radius: 15px 0px 0px 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  height: 100%;
+  width: 35%;
+  border-radius: 0px 15px 15px 0px;
+}
+
+
+.project-card {
+  width: 100%;
+  height: 33.3333333%;
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  color: rgb(225, 225, 225);
+}
+
+.project-card:first-child {
+  border-radius: 0px 15px 0px 0px;
+}
+
+.project-card:nth-child(3) {
+  border-radius: 0px 0px 15px 0px;
+}
+
+.project-card h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card:nth-child(2), .project-card:nth-child(3) {
+  border-top: 1px solid rgb(201, 201, 201);
+}
+
+.project-card:nth-child(3) {
+  height: 32.8%;
+}
+
+.project-info {
+  margin-left: 10%;
+} 
+
+.statusbar {
+  background-color: rgb(138, 138, 138);
+  width: 2%;
+  height: 100%;
+}
+
+.hover-card {
+  background-color: rgb(238, 238, 238);
+  color: rgb(50, 69, 89);
+}
+
+.hover-status {
+  background-color: rgb(55, 173, 113);
+}
+
+.contentImage {
+  border-radius: 15px 0px 0px 15px;
+}

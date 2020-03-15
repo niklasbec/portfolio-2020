@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/header';
 import About from './components/about';
-import Work from './components/work';
+import Showcase from './components/showcase';
 import Contact from './components/contact';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header darkmode={darkmode} setDarkmode={setDarkmode}/>
       <About />
-      <Work />
+      <Showcase />
       <Contact />
     </div>
   );
