@@ -6,13 +6,16 @@ function Header(props) {
         props.setDarkmode(!props.darkmode)
         const body = document.querySelector('body')
         const image = document.getElementById('darkmode')
+        const seeWorkHosted = document.getElementById('seeWorkHosted')
     
         if(props.darkmode === false) {
             body.style.cssText = 'background-color: white; color: black;'
             image.src = "https://image.flaticon.com/icons/svg/414/414840.svg"
+            seeWorkHosted.style.cssText = 'border: 2px solid black; color: black;'
         } else {
             body.style.cssText = 'background-color: black; color: white;'
             image.src = "https://image.flaticon.com/icons/svg/2487/2487570.svg"
+            seeWorkHosted.style.cssText = 'border: 2px solid white; color: white;'
         }
     }
 

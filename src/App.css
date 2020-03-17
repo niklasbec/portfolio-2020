@@ -235,7 +235,7 @@
   height: 350px;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 15px;
   display: flex;
@@ -265,6 +265,7 @@
   display: flex;
   background-color: rgb(243, 243, 243);
   color: rgb(225, 225, 225);
+  cursor: pointer;
 }
 
 .project-card:first-child {
@@ -310,4 +311,23 @@
 
 .contentImage {
   border-radius: 15px 0px 0px 15px;
+}
+
+.button-hosted {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.7rem 0;
+  width: 11rem;
+  background: transparent;
+  color: white;
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
