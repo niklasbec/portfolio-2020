@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Showcase(props) {
 
     const [imageState, setImageState] = useState({
         image: "https://i.imgur.com/AhHPYGE.png",
     })
+
+    useEffect(() => {
+        const card1 = document.getElementById('card1')
+        card1.click()
+      }, [])
 
     const clickHandler = e => {
         if (e.target.id === "card1" || e.target.id === "card2" || e.target.id === "card3") {

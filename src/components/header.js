@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function Header(props) {
+
+  useEffect(() => {
+    const image = document.getElementById('darkmode')
+    image.click()
+  }, [])
 
     function darkmodeToggle () {
         props.setDarkmode(!props.darkmode)
