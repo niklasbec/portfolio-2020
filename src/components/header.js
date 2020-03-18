@@ -10,17 +10,22 @@ function Header(props) {
     function darkmodeToggle () {
         props.setDarkmode(!props.darkmode)
         const body = document.querySelector('body')
+        const showcase = document.querySelector('.showcase')
         const image = document.getElementById('darkmode')
-        const seeWorkHosted = document.getElementById('seeWorkHosted')
-    
+        const hostImage = document.getElementById("host-image")
+        const githubImage = document.getElementById("github-image")
+
         if(props.darkmode === false) {
             body.style.cssText = 'background-color: white; color: black;'
+            showcase.style.cssText = 'background-color: white; color: black;'
             image.src = "https://image.flaticon.com/icons/svg/414/414840.svg"
-            seeWorkHosted.style.cssText = 'border: 2px solid black; color: black;'
+            hostImage.src = "https://image.flaticon.com/icons/svg/1246/1246334.svg"
+            githubImage.src = "https://image.flaticon.com/icons/svg/2111/2111432.svg"
         } else {
             body.style.cssText = 'background-color: black; color: white;'
             image.src = "https://image.flaticon.com/icons/svg/2487/2487570.svg"
-            seeWorkHosted.style.cssText = 'border: 2px solid white; color: white;'
+            hostImage.src = "https://i.imgur.com/1RnN3E0.png"
+            githubImage.src = "https://i.imgur.com/FqhZnwh.png"
         }
     }
 
@@ -32,7 +37,6 @@ function Header(props) {
       </div>
         <div className="nav">
             <a href='#work'><li>Work</li></a>
-            <a href='#about'><li>About</li></a>
             <a href='#contact'><li>Contact</li></a>
             <img onClick={darkmodeToggle} id='darkmode' src='https://image.flaticon.com/icons/svg/414/414840.svg' alt="darkmode toggle in form of a moon/sun" width="30px"/>
         </div>
