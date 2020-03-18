@@ -20,6 +20,7 @@ function App() {
         <a id="seeWorkHosted" href={projectLink}  rel="noopener noreferrer" target="_blank"><img id="host-image" src="https://image.flaticon.com/icons/svg/1246/1246334.svg" width="64px" alt="website-icon"/></a>
         <a href={githubLink}  rel="noopener noreferrer" target="_blank"><img id="github-image" src="https://image.flaticon.com/icons/svg/2111/2111432.svg" width="64px" alt="github-icon"/></a>
       </div>
+      <p className="disclaimer">Each project has a full write up and tech stack documentation on the GitHub Repo.</p>
       <Contact />
     </div>
   );

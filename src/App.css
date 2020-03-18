@@ -135,6 +135,14 @@
   font-size: 1.2rem;
 }
 
+.disclaimer {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
 .contact a {
   text-decoration: none;
   color: blue;
