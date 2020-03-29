@@ -27,7 +27,7 @@ function Showcase(props) {
       document
         .querySelector("#card2")
         .children[0].classList.remove("hover-status");
-        document
+      document
         .querySelector("#redux")
         .style.cssText = "display: none";
       document
@@ -45,7 +45,7 @@ function Showcase(props) {
       document
         .querySelector("#card3")
         .children[0].classList.remove("hover-status");
-        document
+      document
         .querySelector("#redux")
         .style.cssText = "display: none";
       props.setProjectLink("https://apartements.com/");
@@ -60,13 +60,25 @@ function Showcase(props) {
       document
         .querySelector("#card2")
         .children[0].classList.remove("hover-status");
-        document
+      document
         .querySelector("#redux")
         .style.cssText = "display: block"
       props.setProjectLink("https://www.app.decksify.com/");
       props.setGithubLink("https://github.com/Labs-EU4/flashcards-client");
     }
   };
+
+  const childClick = e => {
+    console.log("hi")
+    console.log(e.target.parentElement.id)
+    if (e.target.parentElement.id === "card1" || e.target.parentElement.parentElement.id === "card1") {
+      document.querySelector("#card1").click()
+    } else if (e.target.parentElement.id === "card2" || e.target.parentElement.parentElement.id === "card2") {
+      document.querySelector("#card2").click()
+    } else if (e.target.parentElement.id === "card3" || e.target.parentElement.parentElement.id === "card3") {
+      document.querySelector("#card3").click()
+    }
+}
 
   return (
     <div className="showcase" id="work">
@@ -79,32 +91,32 @@ function Showcase(props) {
           alt="project"
         />
         <div className="tech-stack">
-        <div className="tech-stack-inner">
-        <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" alt="" width="15%"/>
-        <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="15%" alt="" />
-        <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" width="15%" alt="" />
-        <img id="redux" src="https://s3.us-east-2.amazonaws.com/upload-icon/uploads/icons/png/9818154791551942292-256.png" width="13%" height="90%" alt="" />
-        </div>
+          <div className="tech-stack-inner">
+            <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" alt="" width="15%" />
+            <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="15%" alt="" />
+            <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" width="15%" alt="" />
+            <img id="redux" src="https://s3.us-east-2.amazonaws.com/upload-icon/uploads/icons/png/9818154791551942292-256.png" width="13%" height="90%" alt="" />
+          </div>
         </div>
       </div>
       <div className="right">
         <div id="card1" className="project-card" onClick={clickHandler}>
           <div className="statusbar" />
-          <div className="project-info">
+          <div className="project-info" onClick={childClick}>
             <h4>Eventico</h4>
             <p className="subline-project">Party planning App!</p>
           </div>
         </div>
         <div id="card2" className="project-card" onClick={clickHandler}>
           <div className="statusbar" />
-          <div className="project-info">
+          <div className="project-info" onClick={childClick}>
             <h4>Idealista</h4>
             <p className="subline-project">Housing Marketplace</p>
           </div>
         </div>
         <div id="card3" className="project-card" onClick={clickHandler}>
           <div className="statusbar" />
-          <div className="project-info">
+          <div className="project-info" onClick={childClick}>
             <h4>Decksify</h4>
             <p className="subline-project">Flashcard App</p>
           </div>
