@@ -27,6 +27,9 @@ function Showcase(props) {
       document
         .querySelector("#card2")
         .children[0].classList.remove("hover-status");
+        document
+        .querySelector("#redux")
+        .style.cssText = "display: none";
       document
         .querySelector("#card3")
         .children[0].classList.remove("hover-status");
@@ -42,10 +45,13 @@ function Showcase(props) {
       document
         .querySelector("#card3")
         .children[0].classList.remove("hover-status");
+        document
+        .querySelector("#redux")
+        .style.cssText = "display: none";
       props.setProjectLink("https://apartements.com/");
       props.setGithubLink("https://github.com/niklasbec/apartments");
     } else if (e.target.id === "card3") {
-      setImageState({ image: "https://i.imgur.com/qXjPkau.jpg" });
+      setImageState({ image: "https://i.imgur.com/47RuKwu.png" });
       document.querySelector("#card1").classList.remove("hover-card");
       document.querySelector("#card2").classList.remove("hover-card");
       document
@@ -54,8 +60,11 @@ function Showcase(props) {
       document
         .querySelector("#card2")
         .children[0].classList.remove("hover-status");
-      props.setProjectLink("https://law.com/");
-      props.setGithubLink("https://github.com/niklasbec/mohrmannschmude");
+        document
+        .querySelector("#redux")
+        .style.cssText = "display: block"
+      props.setProjectLink("https://www.app.decksify.com/");
+      props.setGithubLink("https://github.com/Labs-EU4/flashcards-client");
     }
   };
 
@@ -69,6 +78,14 @@ function Showcase(props) {
           className="contentImage"
           alt="project"
         />
+        <div className="tech-stack">
+        <div className="tech-stack-inner">
+        <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" alt="" width="15%"/>
+        <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="15%" alt="" />
+        <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" width="15%" alt="" />
+        <img id="redux" src="https://s3.us-east-2.amazonaws.com/upload-icon/uploads/icons/png/9818154791551942292-256.png" width="13%" height="90%" alt="" />
+        </div>
+        </div>
       </div>
       <div className="right">
         <div id="card1" className="project-card" onClick={clickHandler}>
@@ -88,8 +105,8 @@ function Showcase(props) {
         <div id="card3" className="project-card" onClick={clickHandler}>
           <div className="statusbar" />
           <div className="project-info">
-            <h4>S&M Law</h4>
-            <p className="subline-project">Law Firm Website</p>
+            <h4>Decksify</h4>
+            <p className="subline-project">Flashcard App</p>
           </div>
         </div>
       </div>

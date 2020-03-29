@@ -255,6 +255,37 @@
   box-shadow: 6px 9px 40px -2px rgba(112, 112, 112, 1);
 }
 
+.showcase-dark {
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  box-shadow: unset;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  margin-top: -8%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+#redux {
+  display: none;
+}
+
+.tech-stack-inner {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  width: 50%;
+}
+
+.tech-stack img{
+margin-right: 10px;
+}
+
 .left {
   height: 100%;
   width: 65%;

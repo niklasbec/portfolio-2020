@@ -18,6 +18,7 @@ function Header(props) {
         if(props.darkmode === false) {
             body.style.cssText = 'background-color: white; color: black;'
             showcase.style.cssText = 'background-color: white; color: black;'
+            showcase.classList.remove("showcase-dark")
             image.src = "https://image.flaticon.com/icons/svg/414/414840.svg"
             hostImage.src = "https://image.flaticon.com/icons/svg/1246/1246334.svg"
             githubImage.src = "https://image.flaticon.com/icons/svg/2111/2111432.svg"
@@ -26,6 +27,7 @@ function Header(props) {
             image.src = "https://image.flaticon.com/icons/svg/2487/2487570.svg"
             hostImage.src = "https://i.imgur.com/1RnN3E0.png"
             githubImage.src = "https://i.imgur.com/FqhZnwh.png"
+            showcase.classList.add("showcase-dark")
         }
     }
 
