@@ -427,3 +427,9 @@ margin-right: 10px;
     height: 31vw;
   }
 }
+
+@media (max-width: 650px) {
+  .showcase, .flex, .disclaimer {
+    display: none;
+  }
+}

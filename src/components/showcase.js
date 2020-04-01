@@ -33,6 +33,9 @@ function Showcase(props) {
       document
         .querySelector("#card3")
         .children[0].classList.remove("hover-status");
+        document
+        .querySelector("#mongo")
+        .style.cssText = "display: block"
       props.setProjectLink("https://eventico.com/");
       props.setGithubLink("https://github.com/niklasbec/eventico");
     } else if (e.target.id === "card2") {
@@ -46,8 +49,11 @@ function Showcase(props) {
         .querySelector("#card3")
         .children[0].classList.remove("hover-status");
       document
-        .querySelector("#redux")
+        .querySelector("#mongo")
         .style.cssText = "display: none";
+        document
+        .querySelector("#redux")
+        .style.cssText = "display: none"
       props.setProjectLink("https://apartements.com/");
       props.setGithubLink("https://github.com/niklasbec/apartments");
     } else if (e.target.id === "card3") {
@@ -63,6 +69,9 @@ function Showcase(props) {
       document
         .querySelector("#redux")
         .style.cssText = "display: block"
+        document
+        .querySelector("#mongo")
+        .style.cssText = "display: none"
       props.setProjectLink("https://www.app.decksify.com/");
       props.setGithubLink("https://github.com/Labs-EU4/flashcards-client");
     }
@@ -96,6 +105,7 @@ function Showcase(props) {
             <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="15%" alt="" />
             <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" width="15%" alt="" />
             <img id="redux" src="https://s3.us-east-2.amazonaws.com/upload-icon/uploads/icons/png/9818154791551942292-256.png" width="13%" height="90%" alt="" />
+            <img id="mongo" src="https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png" width="13%" height="90%" alt="" />
           </div>
         </div>
       </div>
