@@ -36,7 +36,7 @@ function Showcase(props) {
         document
         .querySelector("#mongo")
         .style.cssText = "display: block"
-      props.setProjectLink("https://eventico.com/");
+      props.setProjectLink("https://eventico.now.sh/");
       props.setGithubLink("https://github.com/niklasbec/eventico");
     } else if (e.target.id === "card2") {
       setImageState({ image: "https://i.imgur.com/W54OIYB.png" });
@@ -54,7 +54,7 @@ function Showcase(props) {
         document
         .querySelector("#redux")
         .style.cssText = "display: none"
-      props.setProjectLink("https://apartements.com/");
+      props.setProjectLink("https://apartments-k0flaeyqg.now.sh/");
       props.setGithubLink("https://github.com/niklasbec/apartments");
     } else if (e.target.id === "card3") {
       setImageState({ image: "https://i.imgur.com/47RuKwu.png" });
