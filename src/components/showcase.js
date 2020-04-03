@@ -54,7 +54,7 @@ function Showcase(props) {
         document
         .querySelector("#redux")
         .style.cssText = "display: none"
-      props.setProjectLink("https://apartments-k0flaeyqg.now.sh/");
+      props.setProjectLink("https://apartments.now.sh/");
       props.setGithubLink("https://github.com/niklasbec/apartments");
     } else if (e.target.id === "card3") {
       setImageState({ image: "https://i.imgur.com/47RuKwu.png" });
