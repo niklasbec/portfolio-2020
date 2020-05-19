@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Showcase(props) {
   const [imageState, setImageState] = useState({
-    image: "https://i.imgur.com/AhHPYGE.png"
+    image: "https://i.imgur.com/BGvvj8Y.png"
   });
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function Showcase(props) {
       el.classList.add("hover-card");
     }
     if (e.target.id === "card1") {
-      setImageState({ image: "https://i.imgur.com/AhHPYGE.png" });
+      setImageState({ image: "https://i.imgur.com/BGvvj8Y.png" });
       document.querySelector("#card2").classList.remove("hover-card");
       document.querySelector("#card3").classList.remove("hover-card");
       document
@@ -36,10 +36,10 @@ function Showcase(props) {
         document
         .querySelector("#mongo")
         .style.cssText = "display: block"
-      props.setProjectLink("https://eventico.now.sh/");
-      props.setGithubLink("https://github.com/niklasbec/eventico");
+      props.setProjectLink("https://beeshort.link/");
+      props.setGithubLink("https://github.com/niklasbec/linkshortener");
     } else if (e.target.id === "card2") {
-      setImageState({ image: "https://i.imgur.com/W54OIYB.png" });
+      setImageState({ image: "https://i.imgur.com/jSRnhWe.png" });
       document.querySelector("#card1").classList.remove("hover-card");
       document.querySelector("#card3").classList.remove("hover-card");
       document
@@ -54,8 +54,8 @@ function Showcase(props) {
         document
         .querySelector("#redux")
         .style.cssText = "display: none"
-      props.setProjectLink("https://apartments.now.sh/");
-      props.setGithubLink("https://github.com/niklasbec/apartments");
+      props.setProjectLink("https://mint.niklasbeckerr.now.sh/");
+      props.setGithubLink("https://github.com/niklasbec/mint");
     } else if (e.target.id === "card3") {
       setImageState({ image: "https://i.imgur.com/47RuKwu.png" });
       document.querySelector("#card1").classList.remove("hover-card");
@@ -113,15 +113,15 @@ function Showcase(props) {
         <div id="card1" className="project-card" onClick={clickHandler}>
           <div className="statusbar" />
           <div className="project-info" onClick={childClick}>
-            <h4>Eventico</h4>
-            <p className="subline-project">Party planning App!</p>
+            <h4>BeeShort</h4>
+            <p className="subline-project">Link shortener</p>
           </div>
         </div>
         <div id="card2" className="project-card" onClick={clickHandler}>
           <div className="statusbar" />
           <div className="project-info" onClick={childClick}>
-            <h4>Idealista</h4>
-            <p className="subline-project">Housing Marketplace</p>
+            <h4>Mint</h4>
+            <p className="subline-project">Landing Page</p>
           </div>
         </div>
         <div id="card3" className="project-card" onClick={clickHandler}>

@@ -295,6 +295,7 @@ margin-right: 10px;
   border-radius: 15px 0px 0px 15px;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .right {
