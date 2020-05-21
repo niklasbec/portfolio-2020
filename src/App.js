@@ -17,8 +17,14 @@ function App() {
       <About />
       <Showcase setProjectLink={setProjectLink} setGithubLink={setGithubLink} />
       <div className="flex">
+        <div>
         <a id="seeWorkHosted" href={projectLink}  rel="noopener noreferrer" target="_blank"><img id="host-image" src="https://image.flaticon.com/icons/svg/1246/1246334.svg" width="64px" alt="website-icon"/></a>
+        <p className="text-align">Link</p>
+        </div>
+        <div>
         <a href={githubLink}  rel="noopener noreferrer" target="_blank"><img id="github-image" src="https://image.flaticon.com/icons/svg/2111/2111432.svg" width="64px" alt="github-icon"/></a>
+        <p className="text-align">See repo</p>
+        </div>
       </div>
       <p className="disclaimer">Each project has a full write up and tech stack documentation on the GitHub Repo.</p>
       <Contact />
